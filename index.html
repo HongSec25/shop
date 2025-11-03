@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework11</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            display: flex;
+            justify-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            height: 80px;
+            gap: 10px;
+            align-items: center;
+            background-color: #ffffff;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        body{
+            font-weight: bold;
+            background-color:#f9fafc;
+            font-family: Poppins, sans-serif;
+        }
+
+        .promo{
+            font-size: 18px;
+            margin-top: 90px;
+            color: #2C2C2C;
+        }
+
+        .logo{
+            margin-left: 50px;
+            display: flex;
+            align-items: center;
+            color: #2d2d2d;
+        }
+
+        .logo h2{
+            margin: 10px 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 40px;
+        }
+
+        .nav-b{
+            margin-right: 50px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-list{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 10px;
+        }
+
+        .nav-item a{
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 22px;
+            color: #2d2d2d;
+        }
+
+        .nav-item a:hover{
+            color: #d32f2f;
+        }
+
+        .btn-h{
+            color: #ffffff;
+            background-color:#ff4d4d;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.1);
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        .btn-h:hover{
+            transform: translateY(-2px);
+            background-color: #d32f2f;
+        }
+
+        .product-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 60%;
+            gap: 30px;
+            margin: 50px auto;
+            padding: 50px auto;
+        }
+
+        .product-off{
+            position: relative;
+        }
+
+        .product-off span{
+            position: absolute;
+            right: -7px;
+            background: #ff4d4d;
+            color: white;
+            font-size: 12px;
+            padding: 3px 3px;
+            font-weight: bold;
+            border-radius: 0 8px 8px 0;
+            box-shadow:  0 2px 6px rgba(0,0,0,0.2);
+            transform: rotate(35deg);
+        }
+
+
+        .product-card{
+            border-radius: 8px;
+            background-color: #ffffff;
+            width: 150px;
+            padding: 10px;
+        }
+
+        .product-card img{
+            width: 100%;
+            
+        }
+
+        .title{
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #222222;
+        }
+
+        .price{
+            font-size: 20px;
+            color: #008000;
+            margin-bottom: 8px;
+        }
+
+        .btn{
+            color: #ffffff;
+            background-color:#ff4d4d;
+            padding: 5px 5px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .btn:hover{
+            background-color: #e63946;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhhbWJ1cmdlci1pY29uIGx1Y2lkZS1oYW1idXJnZXIiPjxwYXRoIGQ9Ik0xMiAxNkg0YTIgMiAwIDEgMSAwLTRoMTZhMiAyIDAgMSAxIDAgNGgtNC4yNSIvPjxwYXRoIGQ9Ik01IDEyYTIgMiAwIDAgMS0yLTIgOSA3IDAgMCAxIDE4IDAgMiAyIDAgMCAxLTIgMiIvPjxwYXRoIGQ9Ik01IDE2YTIgMiAwIDAgMC0yIDIgMyAzIDAgMCAwIDMgM2gxMmEzIDMgMCAwIDAgMy0zIDIgMiAwIDAgMC0yLTJxMCAwIDAgMCIvPjxwYXRoIGQ9Im02LjY3IDEyIDYuMTMgNC42YTIgMiAwIDAgMCAyLjgtLjRsMy4xNS00LjIiLz48L3N2Zz4=" alt="">
+            <h2>Cateen</h2>
+        </div>
+
+        <div class="nav-b">
+            <ul class="nav-list">
+            <li class="nav-item"><a href="">Deal</a></li>
+            <li class="nav-item"><a href="">Contact</a></li>
+        </ul>
+
+        <button class="btn-h">
+            <i data-lucide="shopping-basket"></i>
+        </button>
+        </div>
+    </header>
+
+    <div class="promo">
+        <marquee behavior="" direction="">🚚 Free delivery over $15 ___________Order Now 📞 (855) 123-4567</marquee>
+    </div>
+
+   <div class="product-container">
+        <div class="product-card">
+            <div class="product-off">
+                <a href="Burger.html"><img src="https://freepngimg.com/thumb/food/4-2-food-png-thumb.png" alt=""></a>
+                <span>20% off</span>
+            </div>
+            <p class="title">Burger</p>
+            <p class="price">2.99$</p>
+            <button class="btn">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-off">
+                <a href="Coke.html"><img src="https://freepngimg.com/thumb/coca_cola/7-coca-cola-diet-can-png-image-thumb.png" alt=""></a>
+                <span>20% off</span>
+            </div>
+            <p class="title">Coke</p>
+            <p class="price">1.00$</p>
+            <button class="btn">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-off">
+                <a href="Pepsi.html"><img src="https://freepngimg.com/thumb/pepsi/2-pepsi-can-png-image-thumb.png" alt=""></a>
+                <span>20% off</span>
+            </div>
+            <p class="title">Pepsi</p>
+            <p class="price">1.00$</p>
+            <button class="btn">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-off">
+                <a href="Pizza.html"><img src="https://freepngimg.com/thumb/pizza/8-pizza-png-image-thumb.png" alt=""></a>
+                <span>20% off</span>
+            </div>
+            <p class="title">Pizza</p>
+            <p class="price">9.99$</p>
+            <button class="btn">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-off">
+                <a href="Hotdog.html"><img src="https://freepngimg.com/thumb/hot_dog/1-2-hot-dog-png-file-thumb.png" alt=""></a>
+                <span>20% off</span>
+            </div>
+            <p class="title">Hotdog</p>
+            <p class="price">1.99$</p>
+            <button class="btn">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+             <div class="product-off">
+                <a href="Sandwich.html"><img src="https://freepngimg.com/thumb/sandwich/4-2-sandwich-png-clipart-thumb.png" alt=""></a>
+                <span>20% off</span>
+            </div>
+            <p class="title">Sandwich</p>
+            <p class="price">1.5$</p>
+            <button class="btn">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+             <div class="product-off">
+                <a href="Chicken-fries.html"><img src="https://freepngimg.com/thumb/chicken/110841-picture-chicken-fried-wings-free-download-png-hd-thumb.png" alt=""></a>
+                <span>20% off</span>
+            </div>
+            <p class="title">Chicken fries</p>
+            <p class="price">3.5$</p>
+            <button class="btn">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+             <div class="product-off">
+                <a href="Potato.html"><img src="https://freepngimg.com/thumb/mcdonalds/70562-king-hamburger-mcdonald's-fries-french-burger-chicken-thumb.png" alt=""></a>
+                <span>20% off</span>
+            </div>
+            <p class="title">Potato fries</p>
+            <p class="price">0.5$</p>
+            <button class="btn">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+             <div class="product-off">
+                <a href="Ice-cream.html"><img src="https://freepngimg.com/thumb/ice_cream/11-2-ice-cream-transparent-thumb.png" alt=""></a>
+                <span>20% off</span>
+            </div>
+            <p class="title">Ice cream</p>
+            <p class="price">1.5$</p>
+            <button class="btn">
+                Add to Cart
+            </button>
+        </div>
+   </div>
+
+<script src="https://unpkg.com/lucide@latest">
+</script>
+<script>
+        lucide.createIcons();
+</script>
+</body>
+</html>

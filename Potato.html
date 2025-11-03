@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato-fries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 100px;
+            display: flex;
+            justify-content: center;
+            background-color:#f9fafc;
+        }
+
+        .container{
+            width: 800px;
+            height: 550px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .product-img{
+            margin-top: 130px;
+            margin-left: 100px;
+            padding: 10px 10px;
+            width: 220px;
+            height: 220px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-info{
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .product-info h1{
+            text-align: center;
+            color: #222;
+            font-family: Poppins, sans-serif;
+            margin: 20px;
+        }
+
+        .des{
+            color: #555;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .price{
+            font-size: 30px;
+            color: #00b86b;
+            margin-bottom: 8px;
+        }
+
+        .price span{
+            color: #00b86b;
+        }
+
+        .dis{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #00b86b;
+            color: #fff;
+            font-weight: bold;
+            font-size: 13px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+
+        .container-btn{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 20px auto;
+
+        }
+
+        .btn-a{
+            margin-top: 70px;
+        }
+
+        .btn-b{
+            color: #f9fafc;
+            background-color:#ff4d4d;
+            padding: 10px 5px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.1);
+            width: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .btn-b:hover{
+            background-color: #e63946;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255,77,77,0.4);
+        }
+
+        .btn{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            background-color:#ff4d4d;
+            padding: 10px 5px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.1);
+            width: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover{
+            background-color: #e63946;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255,77,77,0.4);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="dis">20% OFF</span>
+        <div class="product-img">
+            <img src="https://freepngimg.com/thumb/mcdonalds/70562-king-hamburger-mcdonald's-fries-french-burger-chicken-thumb.png" alt="">
+            <div class="btn-a">
+                 <a href="index.html"><button class="btn-b"><h2>Back</h2></button></a>
+            </div>
+           
+        </div>
+        <div class="product-info">
+            <h1>Potato fries</h1>
+            <p class="des">Crispy on the outside, fluffy inside — our golden potato fries are lightly salted and served fresh for the perfect snack or side dish.</p>
+            <p class="price"><span>Price:  </span>0.50$</p>
+
+            <div class="container-btn">
+            <button class="btn"><i data-lucide="shopping-cart"></i><h2>Add to cart</h2></button>
+            <button class="btn"><i data-lucide="shopping-bag"></i><h2>Buy Now</h2></button>
+            </div>
+        </div>
+        
+    </div>
+
+<script src="https://unpkg.com/lucide@latest">
+</script>
+<script>
+        lucide.createIcons();
+</script>
+</body>
+</html>
