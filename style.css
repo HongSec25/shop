@@ -86,11 +86,11 @@
 
         .product-container{
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             width: 90%;
             gap: 30px;
             margin: 20px;
-            padding-left: 200px;
+            padding-left: 250px;
         }
 
         .product-off{
@@ -151,12 +151,12 @@
         }
 
 @media (max-width: 1200px) {
-    .product-container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 90%;
-        margin: 20px;
-        padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 90%;
+            gap: 30px;
+            margin: 20px;
+            padding-left: 250px;
     }
 
     .product-card{
@@ -219,4 +219,5 @@
             padding: 10px;
     }
 }
+
 
